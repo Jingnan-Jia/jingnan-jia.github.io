@@ -1,0 +1,13 @@
+---
+title: "Technical blog (irregularly updated)"
+permalink: /technical_blog/
+author_profile: true
+---
+
+{% include base_path %}
+
+
+{% for post in site.technical_blog %}
+  {% include archive-single.html %}
+{% endfor %}
+
