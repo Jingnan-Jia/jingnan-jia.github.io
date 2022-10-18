@@ -7,21 +7,27 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Jingnan Jia (贾京南）"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Jingnan Jia"
+description              : &description "PhD student in Leiden University Medical Center. Research interests include deep learning based medical image analysis."
+url                      : https://jingnan222.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "jingnan222/jingnan222.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+talkmap_link             : true #change to true to add link to talkmap on talks page
+tripmap_link             : true
+
+
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:                  
+    shortname            : Jingnan
+    
   disqus:
     shortname            :
   discourse:
@@ -73,22 +79,22 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          :  G-7XY9280WBB  # G-CKPT9H2LK4 is for jiajingnan222@gmail.com
 
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Jingnan Jia"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  bio              : "Email: j.jia@lumc.nl"
+  location         : "Leiden University, the Netherlands"
+  employer         : "LUMC"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=T6irKtwAAAAJ&hl"
+  email            : "jiajingnan2222@gmail.com"
+  researchgate     : "https://www.researchgate.net/profile/Jingnan-Jia"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,17 +102,17 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "Jingnan-Jia"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/jia-jingnan-20103715b/"
+  orcid            : "https://orcid.org/0000-0002-1025-2557"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "https://stackoverflow.com/users/9229923/jingnan-jia"
   steam            :
   tumblr           :
   twitter          : "replacethistwitterhandle"
@@ -175,18 +181,22 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
+  technical_blog:
+    output: true
+    permalink: /:collection/:path/
+  cv:
+    output: true
+    permalink: /:collection/:path/
+  life:
+    output: true
+    permalink: /:collection/:path/
+
 
 
 # Defaults
@@ -209,15 +219,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+
   # _publications
   - scope:
       path: ""
@@ -227,16 +229,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
+      
+    # _talks
   - scope:
       path: ""
       type: talks
@@ -244,6 +238,41 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
+
+  # _technical_blog
+  - scope:
+      path: ""
+      type: technical_blog
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      
+  # _cv
+  - scope:
+      path: ""
+      type: cv
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+
+  # _life
+  - scope:
+      path: ""
+      type: life
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Sass/SCSS
 sass:
@@ -255,7 +284,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Amsterdam # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
