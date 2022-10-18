@@ -7,7 +7,7 @@ author_profile: true
 {% include base_path %}
 
 
-{% for post in site.technical_blog %}
+{% for post in site.technical_blog reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
