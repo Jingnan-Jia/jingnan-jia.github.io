@@ -17,3 +17,6 @@ main:
     
   - title: "Life"
     url: /life/
+
+  - title: "Year-archive"
+    url: /year-archive/
