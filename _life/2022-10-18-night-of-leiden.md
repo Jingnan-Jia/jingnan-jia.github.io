@@ -1,6 +1,6 @@
 ---
 title: "Night of Leiden"
-excerpt: "The beautiful and peaceful night of Leiden. <br/><img src='https://www.iheartberlin.de/wp-content/uploads/2018/01/Bruderkuss-Mural.jpg'>"
+excerpt: "The beautiful and peaceful night of Leiden. <br/><img src='https://dutchwannabe.com/wp-content/uploads/2019/08/Leiden-evening-lights-small.jpg'>"
 collection: life # all collections can be found in _config.yml -> collections
 location: "Leiden, Netherlands"
 tags:
