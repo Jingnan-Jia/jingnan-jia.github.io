@@ -8,4 +8,4 @@ date: 2021-06-07
 location: "Leiden, the Netherlands"
 ---
 
-An introduction on my work in Monday's Lab Meeting.
+On Monday's Lab Meeting, I gave a presentation on my work: Prediction of Lung CT Scores of Systemic Sclerosis by an End-to-end Fully Automatic Framework using Deep Learning.
