@@ -1,5 +1,5 @@
 ---
-title: 'Full tutorial for a complete python project'
+title: 'Full checklist for a complete python project'
 tags:
   - python
   - Tutorial

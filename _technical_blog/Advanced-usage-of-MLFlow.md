@@ -47,3 +47,8 @@ MLflow is an open source platform to manage the ML lifecycle, including experime
 - Record experiment ID, cpu_count, data_shuffle_seed, epochs, eval_id, batch_size, fold, gpu_name, hostname, loss_name, net_name, mode, net_parameters, outfile, pretrained, remark, workers, input_size, etc.
 
 
+FAQ:
+Fail to connect localhost:5000
+A: https://stackoverflow.com/questions/60531166/how-to-safely-shutdown-mlflow-ui
+
+
