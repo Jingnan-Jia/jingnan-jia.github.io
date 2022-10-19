@@ -92,8 +92,8 @@ layout: default
           {% assign all_articles = site.technical_blog %}
         {% elsif page.collection == 'publications' %}
           {% assign all_articles = site.publications %}
-        {% elsif page.collection == 'talk' %}
-          {% assign all_articles = site.talk %}
+        {% elsif page.collection == 'talks' %}
+          {% assign all_articles = site.talks %}
         {% endif %}
         
         {% for post in all_articles limit:4 %}
