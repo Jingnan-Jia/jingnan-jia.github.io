@@ -62,6 +62,11 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
+
+        <span id="busuanzi_container_page_pv">
+          Viewed <span id="busuanzi_value_page_pv"></span>times
+        </span>
+
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
