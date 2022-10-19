@@ -10,6 +10,8 @@ redirect_from:
 {% include base_path %}
 
 <a href='/files/Jingnan_cv_2022.pdf'>CV PDF (not updated frequently)</a>
+
+
 <a href='/files/Jingnan_cv_2022_Chinese.pdf'>CV PDF (Chinese version) 中文简历下载 (not updated frequently)</a>
 
 Education
