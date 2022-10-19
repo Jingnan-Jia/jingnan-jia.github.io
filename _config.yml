@@ -209,6 +209,7 @@ defaults:
       comments: true
       share: true
       related: true
+      
   # _pages
   - scope:
       path: ""
@@ -224,8 +225,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      read_time: true
       comments: true
+      share: true
+      related: true
       
     # _talks
   - scope:
@@ -234,7 +237,10 @@ defaults:
     values:
       layout: talk
       author_profile: true
+      read_time: true
+      comments: true
       share: true
+      related: true
 
 
   # _technical_blog
@@ -256,8 +262,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
       share: true
-      comment: true
 
   # _life
   - scope:
