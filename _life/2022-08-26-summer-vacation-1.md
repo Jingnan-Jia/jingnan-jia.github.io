@@ -1,6 +1,6 @@
 ---
 title: "2022 summer vacation 1"
-excerpt: "The beautiful summer vacation started from Berlin. <br/><img src='https://www.iheartberlin.de/wp-content/uploads/2018/01/Bruderkuss-Mural.jpg'>"
+excerpt: "<br/><img src='https://www.iheartberlin.de/wp-content/uploads/2018/01/Bruderkuss-Mural.jpg'> The beautiful summer vacation started from Berlin."
 collection: life # all collections can be found in _config.yml -> collections
 location: "Berlin, Germany"
 tags:
