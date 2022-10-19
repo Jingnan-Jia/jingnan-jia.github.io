@@ -15,10 +15,10 @@ import glob
 import getorg
 from geopy import Nominatim
 
-g = glob.glob("*.md")
+g = glob.glob("./_talks/*.md")
 
 
-geocoder = Nominatim()
+geocoder = Nominatim(user_agent="jiajingnan2222@gmail.com")
 location_dict = {}
 location = ""
 permalink = ""
@@ -40,7 +40,7 @@ for file in g:
 
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
+getorg.orgmap.output_html_cluster_map(location_dict, folder_name="./talkmap", hashed_usernames=False)
 
 
 
