@@ -1,6 +1,6 @@
 ---
 title: 'Ruby'
-date: 2022-11-01
+date: 2022-10-01
 tags:
   - Jekyll
   - Ruby
