@@ -39,7 +39,6 @@ Work experience
 * Summer 2018: Research Assistant
   * Dongguan University of Technology
   * Duties included: Poisoning Attack in Deep Neural Network
-  * Supervisor: Professor Yi Wang (Alice)
 
   
 Skills
@@ -61,7 +60,8 @@ Linux, Vim, Latex, Git, Jekyll, Sphinx, Docker, MLFlow, MONAI, SimpleITK, Lighti
 Achievements
 =================
 * Finalist of best student paper award for SPIE: Medical Imaging 2022. [Cerificate of award](/files/spie_certificate.pdf)
-* Top 3 of at the UCL Medical Image Compting Summer School (MedICSS). [Certificate of participation](/files/MedICSS2021_certificate_Participant_Jingnan-Jia.pdf). [Certificate of award](/files/MedICSS2021_certificate_ProjectMerit_Jingnan-Jia.pdf).   
+* Top 3 of at the UCL Medical Image Compting Summer School (MedICSS 2021). [Certificate of participation](/files/MedICSS2021_certificate_Participant_Jingnan-Jia.pdf). [Certificate of award](/files/MedICSS2021_certificate_ProjectMerit_Jingnan-Jia.pdf).   
+* SPIE: Medical Imaging 2022 Student Conference Support (up to $1000 for airfare and/or lodging as well as a registration fee waiver).
 
 
 Other activieies
