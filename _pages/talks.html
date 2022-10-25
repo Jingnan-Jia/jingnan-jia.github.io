@@ -5,27 +5,7 @@ permalink: /talks/
 language: 'en'
 author_profile: true
 ---
-<p>Google translate this page to Chinese</p>
-
-<button type="button" onclick="trans()">To Chinese!</button>
-
-<script>
-  function trans() {
-    alert("Hello world!");
-  }
-</script>
-
-{% if site.language == 'en' %}
-<div id="google_translate_element"></div><script>	
-  function googleTranslateElementInit() {	
-  new google.translate.TranslateElement({	
-  pageLanguage: 'en'	
-  }, 'google_translate_element');	
-  }	
-  </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-{{assign site.language = 'cn'}}
-
-{% endif %}
+<p style="text-decoration:underline;"><a href="https://jingnan--jia-github-io.translate.goog/talks/?_x_tr_sl=en&_x_tr_tl=zh-CN&_x_tr_hl=en&_x_tr_pto=wapp">中文!</a></p>
 
 
 {% if site.talkmap_link == true %}
