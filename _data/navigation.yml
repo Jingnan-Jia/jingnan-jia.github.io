@@ -18,5 +18,7 @@ main:
   - title: "Life"
     url: /life/
 
+  - title: "语言切换(中文/English)"
+    url: /life/
   # - title: "Year-archive"
   #   url: /year-archive/
