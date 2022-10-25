@@ -48,6 +48,50 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
+
+# 中文
+# -----------------
+cn: &DEFAULT_CN
+  page                       : "页面"
+  pagination_previous        : "上一页"
+  pagination_next            : "下一页"
+  breadcrumb_home_label      : "主页"
+  breadcrumb_separator       : "/"
+  toc_label                  : "本页"
+  ext_link_label             : "直接链接"
+  less_than                  : "少于"
+  minute_read                : "阅读时间"
+  share_on_label             : "分享到"
+  meta_label                 :
+  tags_label                 : "标签:"
+  categories_label           : "分类:"
+  date_label                 : "发布于:"
+  comments_label             : "留下评论"
+  comments_title             : "评论"
+  more_label                 : "更多"
+  related_label              : "你可能也喜欢"
+  follow_label               : "关注:"
+  feed_label                 : "订阅Feed"
+  powered_by                 : "Powered by"
+  website_label              : "网站"
+  email_label                : "Email"
+  recent_posts               : "近期博文"
+  undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
+  comment_form_info          : "你的邮箱不会被公开. 星号为必填项"
+  comment_form_comment_label : "评论"
+  comment_form_md_info       : "支持Markdown."
+  comment_form_name_label    : "昵称"
+  comment_form_email_label   : "邮箱"
+  comment_form_website_label : "网站 (可选)"
+  comment_btn_submit         : "提交评论"
+  comment_btn_submitted      : "已提交"
+  comment_success_msg        : "感谢评论! 通过审核后您的评论会被立即显示."
+  comment_error_msg          : "对不起，您的提交出现问题.请确保所有必填项已被填写，然后重试."
+  loading_label              : "加载中..."
+cn-PRC:
+  <<: *DEFAULT_EN
+
+
 # Spanish
 # --------------
 es: &DEFAULT_ES
