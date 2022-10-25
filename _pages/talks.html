@@ -2,8 +2,14 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
+language: 'en'
 author_profile: true
 ---
+<p> 测试</p>
+
+<button type="button" onclick="alert('你好，世界!')">点我!</button>
+
+{% if site.language == 'en' %}
 <div id="google_translate_element"></div><script>	
   function googleTranslateElementInit() {	
   new google.translate.TranslateElement({	
@@ -11,7 +17,11 @@ author_profile: true
   }, 'google_translate_element');	
   }	
   </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+{{assign site.language = 'cn'}}
+
+{% endif %}
+
+
 {% if site.talkmap_link == true %}
 
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
