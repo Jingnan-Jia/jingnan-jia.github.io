@@ -9,7 +9,7 @@ tags:
 
 PyCharm and VS Code provide remote debugging features. Let's see how to implement it, respectively. 
 
-Before continue, you need to know some knowledge on [ssh](https://jingnan-jia.github.io/technical_blog/2022-10-24-ssh/) from my previous blog.
+Before continue, you need to know some knowledge on [ssh](/_technical_blog/2022-10-24-ssh/) from my previous blog.
 
 
 
