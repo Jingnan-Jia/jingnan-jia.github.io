@@ -38,6 +38,10 @@ The reason why I switched to use disqus is fro [his web](https://ibug.io/blog/20
 ## Why the some pages of the website do not show the comments part even if I added it?
 A: you need to wait for some time, maybe longer maybe shorter. About 10 minutes from my experience.
 
+## Why sometimes the website is not rendered? just plain text and images without any layout. Like the following image.
+![no_layout](/images/no_layout.jpg)
+
+Answer: just wait more time and refresh.
 
 ## How to make github roll back to previous commit?
 1. Github desktop (I downloaded it, but it did not work and I found its functions have been achieved by Pycharm)

@@ -17,4 +17,10 @@ You may think that `yourname.github.io` is not cool enough compared with `yourna
    
    ![dns_checking](/images/dns_checking.jpg)
 
+6. Set SSL. 
+   
+   SSL can change your domain from `http` to `https`, so that browser would think your website become `Safe`. Otherwise, your website would look like:
+    ![ssl_unsafe](/images/unsafe_ssl.jpg)
+
+   So how to set SSL? <s>`At first you need to buy it from your domain provider. After that you need to install and activate it.`</s> **DO NOT BUY SSL!** Because Github itself provides very simple method to achieve it. Just go to the `setting` of your repository `username.github.io`, click `Code and automation`-> `Pages` -> Check `Enforce HTTPS`. You may need to wait for several minutes to observe its influence, and you may see the layout of the whole website broke down during these minites. Please be patient and you will see the perfect performance finally.
 
