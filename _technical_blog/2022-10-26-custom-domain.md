@@ -1,5 +1,5 @@
 ---
-title: 'set a custom domain for your github page based website'
+title: 'Set a custom domain for your github page based website'
 tags:
   - DNS
 ---
