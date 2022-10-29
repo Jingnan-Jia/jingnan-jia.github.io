@@ -18,3 +18,6 @@ Therefore, given **red** voxel is the object, drawing its border could have 3 di
 ## 2D image
 
 2D image only has face-connected neighbors and edge-connected neighbors. 
+
+**Note:** This post is to illustrate the `fully_connected` argumennt in [`seg-metrics`](https://github.com/Jingnan-Jia/segmentation_metrics/blob/master/seg_metrics/seg_metrics.py)
+
