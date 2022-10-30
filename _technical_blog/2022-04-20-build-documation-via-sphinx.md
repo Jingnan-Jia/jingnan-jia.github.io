@@ -12,6 +12,7 @@ tags:
 Once we built a project/package, we need to tell the users how to use it. Normally we could write a manual. But with the update of the code, the manual needs to be updated at the same time. How to synthesize the update of the manual? We need to use 
 some automatic tools to automate the pipeline. This blog will tell you how to build your Documentation automatically.
 
+# Build documentation
 The following contents are from [this blog](https://blog.csdn.net/lixiaomei0623/article/details/120530642) which seems clearer. I recommend to see the original blog directly for Chinese readers.
 
 ## Using Sphinx to automatically generate documentation
@@ -42,6 +43,10 @@ The following steps are summarized from the [official documentation of sphinx](h
 5. [In the `docs` directory], run `make html`. If raising `ERROR: Unknown directive type "automodule`, See [here](https://stackoverflow.com/questions/13516404/sphinx-error-unknown-directive-type-automodule-or-autoclass) to fix it.
 6. Write some contents. Look at [this doc](https://github.com/Jingnan-Jia/socsa/blob/master/docs/source/index.rst) which added `tutorial`, `experiment_summary` and `api` to the `index.rst`, which will load the three `.rst` files. So we need to write something to the three files.
 
+# Publish the documentation
+
+
+[readthedocs](https://readthedocs.org/) is a platform to host your documentation. details can be fouond on its website.
 
 
 

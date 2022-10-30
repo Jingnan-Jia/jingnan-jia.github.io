@@ -54,7 +54,7 @@ Skills
   * TensorFlow
   
 * Other tools:
-Linux, Vim, Latex, Git, Jekyll, Sphinx, reStructuredText, MarkDown, Docker, MLFlow, MONAI, SimpleITK, Lighting, Ignite, TorchIO, PyCharm, VS Code, SSH, etc.
+Linux, Vim, Latex, Git, Jekyll, Sphinx, reStructuredText, MarkDown, Docker, MLFlow, MONAI, SimpleITK, Lighting, Ignite, TorchIO, PyCharm, VS Code, SSH, WSL, etc.
 
 
 Achievements
