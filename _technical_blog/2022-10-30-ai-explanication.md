@@ -15,12 +15,12 @@ CNN的可解释性可以通过以下几种方式进行。
 ![](https://s2.51cto.com/images/blog/202107/14/6ad0e8808e95ad2f3ac7d65e69a6c369.jpeg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184)
 上图为某CNN 5-8 层输出的某喵星人的特征图的可视化结果(一个卷积核对应一个小图片)。可以发现越是低的层，捕捉的底层次像素信息越多，特征图中猫的轮廓也越清晰。越到高层，图像越抽象，稀疏程度也越高。这符合我们一直强调的特征提取概念。
 
-## 可视化卷积核
+## [可视化卷积核](https://zhuanlan.zhihu.com/p/385910625)
 想要观察卷积神经网络学到的过滤器，一种简单的方法是获取每个过滤器所响应的视觉模式。我们可以将其视为一个优化问题，即从空白输入图像开始，将梯度上升应用于卷积神经网络的输入图像，让某个过滤器的响应最大化，最后得到的图像是选定过滤器具有较大响应的图像。
 ![](https://s2.51cto.com/images/blog/202107/14/8daa47cdd95efbac97742b6e5b90e5c0.jpeg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184)
 更多图片和解释见[此文](https://blog.51cto.com/u_14411234/3115810)
 
-## 把目标特征图通过DeConv, unpool, unrelu等逆向操作，映射回原图的分辨率。
+## [把目标特征图通过DeConv, unpool, unrelu等逆向操作，映射回原图的分辨率](https://hackmd.io/@machine-learning/ByaTE80BI#ZFNetDeconvNet-Summary-and-Implementation)
 从而得到下面2张[图](https://arxiv.org/pdf/1311.2901.pdf)。图中前几层看起来是纹理，后几层是更高级的综合性的信息
 
 ![](https://miro.medium.com/max/638/0*qgBQt9dMbUtntbpn.jpg)
@@ -31,7 +31,12 @@ CNN的可解释性可以通过以下几种方式进行。
 **问题2** 这个DeConvnet生成的图，输入是什么？是最后一个卷积块的输出（全连接层之前）？
 **答案2** 论文原话："To examine a given convnet activation, we set all other activations in the layer to zero and pass the feature maps as input to the attached deconvnet layer".
 
-## CAM Series 类别激活图系列
+**问题2**:backpropagation, deconvnet 和guided backgpropagati**的区别是什么？
+**答案2** 导向反向传播与反卷积网络的区别在于对ReLU的处理方式。在反卷积网络中使用ReLU处理梯度，只回传梯度大于0的位置，而在普通反向传播中只回传feature map中大于0的位置，在导向反向传播中结合这两者，只回传输入和梯度都大于0的位置，这相当于在普通反向传播的基础上增加了来自更高层的额外的指导信号，这阻止了负梯度的反传流动，梯度小于0的神经元降低了正对应更高层单元中我们想要可视化的区域的激活值（https://blog.csdn.net/KANG157/article/details/113154590）
+![](https://img-blog.csdnimg.cn/img_convert/03337ff4864bc31b98b3fc8fd68a5474.png)
+
+
+## CAM Series [类别激活图系列](https://zhuanlan.zhihu.com/p/269702192)
 CAM是一系列类似的激活图。大致原理是把最后一层卷积所输出的特征图通过加权和组成一张图。权重的设计不同产生了一系列不同的论文。
 ![](https://github.com/frgfm/torch-cam/releases/download/v0.3.1/example.png)
 下面一个一个介绍。
@@ -69,6 +74,9 @@ CAM是一系列类似的激活图。大致原理是把最后一层卷积所输�
 ## Occlusion sensitifity 遮挡敏感度
 ![](https://lh5.googleusercontent.com/acHqfkoiS23CKlhdqyB4fvjJ86PNEcT0GUOxRfpCDPo4nO5o_YRBkOR4hrErBcryGUiK5L5xAmFy8Lbae8IAPihcVPeKiMMT9mD_MPRl_C2I4LNtaKgYN0FyNVnLBIMJXLq0CwIs)
 
+# 可视化工具与项目
+[CNN可视化技术总结（四）--可视化工具与项目](https://mp.weixin.qq.com/s?__biz=MzkyMDE2OTA3Mw==&mid=2247485026&idx=1&sn=9c8ca1cf2f6a06f9c25b9a4d2b565161&chksm=c197b97cf6e0306a45d8fe7e5d297b0ef9dd3f2f8c2445df5ba6950325c7b05db27201454463&scene=21#wechat_redirect)
+
 
 参考文献：
 1. https://rpmarchildon.com/wp-content/uploads/2018/06/RM-CNN-Schematic-1.jpg
@@ -79,3 +87,4 @@ CAM是一系列类似的激活图。大致原理是把最后一层卷积所输�
 6. https://datahacker.rs/028-visualization-and-understanding-of-convolutional-neural-networks-in-pytorch/
 7. https://zhuanlan.zhihu.com/p/269702192
 8. https://blog.51cto.com/u_14411234/3115810
+9. https://github.com/utkuozbulak/pytorch-cnn-visualizations#inverted-image-representations
