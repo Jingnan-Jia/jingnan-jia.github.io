@@ -19,4 +19,6 @@ tags:
 
 Reference:
 1. https://adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html
-2. 
+2. https://blog.csdn.net/fu6543210/article/details/80407911
+3. https://www.tinymind.net.cn/articles/3dedb66b996232
+4. https://hackmd.io/@machine-learning/ByaTE80BI#ZFNetDeconvNet-Summary-and-Implementation
