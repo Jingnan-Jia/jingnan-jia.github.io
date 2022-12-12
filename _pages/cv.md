@@ -66,7 +66,7 @@ Achievements
 
 Other activieies
 ==================
-* Reviewer for Medical Image Analysis.
+* Reviewer for Medical Image Analysis (MedIA), The IEEE International Symposium on Biomedical Imaging (ISBI) 2022, 2023.
 * Student member of SPIE, ISBI and IEEE.
 * Own and still maintain an open sourse package: [seg-metrics](https://pypi.org/project/seg-metrics/) for medical image segmentation metrics calculation. Downloads per month is over [500](https://pypistats.org/packages/seg-metrics).
 
