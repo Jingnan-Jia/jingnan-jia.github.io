@@ -70,7 +70,7 @@ Other activieies
 * Student member of SPIE, ISBI and IEEE.
 * Own and still maintain an open sourse package: [seg-metrics](https://pypi.org/project/seg-metrics/) for medical image segmentation metrics calculation. Downloads per month is over [500](https://pypistats.org/packages/seg-metrics).
 
-
+* Contribute to open source packages like [MONAI](https://github.com/Project-MONAI/MONAI) and [MLflow](https://github.com/mlflow/mlflow). I proposed `Issues` and created `Pull requests` merged to the main branches of them.
 
 Publications
 ======
