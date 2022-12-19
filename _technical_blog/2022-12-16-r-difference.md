@@ -5,6 +5,6 @@ tags:
 ---
 A picture is worth a thousand words.
 
-![r](images/r.png)
+![r](/images/r.png)
 
 Summary: different models/folds have different prediction style (slope and intercept). If they are mised, the total r would be lower.
