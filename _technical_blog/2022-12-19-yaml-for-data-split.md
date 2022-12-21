@@ -12,4 +12,6 @@ For instance, in the latter experiments, I found that some patients should be ex
 
 So let's use a YAML file to split dataset so that we can always have the almost same split for training/validation/testing data.
 
+A complete YAML tutorial could be found at [Real Python](https://realpython.com/python-yaml/)
 
+Difference between YAML, JSON and XML is [here](https://realpython.com/python-yaml/#comparison-with-xml-and-json)
