@@ -95,6 +95,7 @@ Answer:
 ---from [slurm website](https://slurm.schedmd.com/cons_res.html)
 
 
-### Question: 
+## Slurm sbatch exclude nodes or node list
+https://bioinfocore.com/unix/slurm-sbatch-exclude-nodes-or-node-list/
 
 
