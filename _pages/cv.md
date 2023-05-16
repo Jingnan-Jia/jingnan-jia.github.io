@@ -43,6 +43,15 @@ Work experience
   
 Skills
 ======
+* Expertise
+  * Segmentation (UNet, nnUNet), classification (VGG, ResNet, ConvNeXt), regression
+  * Point cloud (PointNet, PointNet++, PointNeXt)
+  * Deep supervision
+  * multi-task learning
+  * semi-supervised learning
+  * Multi-processing/-threading
+  * Multi-GPU training
+
 * Programming language
   * Python
   * MATLAB

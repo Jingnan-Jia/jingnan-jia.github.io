@@ -21,3 +21,7 @@ print("Date modified:",datetime.datetime.fromtimestamp(modified))
 
 
 ```
+
+## Sort files from Glob by time
+`files.sort(key=os.path.getctime)`
+from [here](https://stackoverflow.com/questions/168409/how-do-you-get-a-directory-listing-sorted-by-creation-date-in-python).
