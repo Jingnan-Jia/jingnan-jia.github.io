@@ -22,5 +22,8 @@ tags:
    import sys
    sys.path.append("/home/my/path)
    ```
+4. 为什么我的python不是我想要的python?比如我明明在一个python3.8的conda环境里，但是which python显示的并不是pythonn3.8。
+   答：这是因为默认的python是从$PATH中的文件夹一个一个按照顺序查找出来的第一个python。通过`echo $PATH`可以验证。这时候需要搞清楚$PATH怎么就被改动了？去看看.bashrc，那里面可能会发现export 开头的代码，大概率就是对$PATH进行改动的代码。注释掉或者调整路径添加的顺序就好了。
+
 Reference:
 1. https://blog.csdn.net/qq_27825451/article/details/100552739
