@@ -48,4 +48,8 @@ output.backward()
 Because I used the  `monai.DiceLoss`, the shape should be
 
 
+### error: TypeError: only integer tensors of a single element can be converted to an index
+Answer: change `x` to `torch.tensor(x)`
+
+
 
